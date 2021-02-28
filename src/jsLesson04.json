@@ -1,0 +1,31 @@
+[
+  {
+    "id": 123,
+    "user_name": "nob",
+    "email": "aaa@jp",
+    "country": "US",
+    "favorite_food": ["apple", "banana", "cherry"],
+    "followers": ["apple", "banana", "cherry"]
+  },
+  {
+    "id": 1224,
+    "user_name": "nobbbbbbbbb",
+    "email": "aaa@jp",
+    "country": "US",
+    "favorite_food": ["apple", "banana", "cherry"]
+  },
+  {
+    "id": 1223,
+    "user_name": "nob",
+    "email": "aaa@jp",
+    "country": "US",
+    "favorite_food": ["apple", "banana", "cherry"]
+  },
+  {
+    "id": 1213,
+    "user_name": "nob",
+    "email": "aaa@jp",
+    "country": "US",
+    "favorite_food": ["apple", "banana", "cherry"]
+  }
+]
