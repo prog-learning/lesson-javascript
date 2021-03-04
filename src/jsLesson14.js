@@ -2,28 +2,32 @@
  * #14 try catchについて
  */
 
-// const text1 = "あなたの名前は" + myname + "ですね。" // エラーのあるコード
+const myName = "nob"
+// 通常の場合
+myName = "bob" // エラーのため,ここで処理が止まる
+console.log("よくできました！") // 実行されない
 
-// console.log("よくできました！")
+try {
+  myName = "bob"
+  // エラーの場合は下のcatchに吐き出して次の処理を実行する
+} catch (error) {
+  console.log(error)
+}
 
-// try {
-//   const text2 = "あなたの名前は" + myname + "ですね。"
-// } catch (error) {
-//   console.log(error)
-// }
+console.log("よくできました！") // 実行される
 
-// console.log("よくできました！")
+/**
+ * throwについて
+ */
 
-/* throwについて */
+try {
+  let color = "red"
+  color = "blue"
+  // ここまでエラーはないはずだけど, throwを使って強制でエラーを吐き出す
+  throw "「ぐははははは,エラーにしてやる！」" // エラーメッセージを作成
+  // throw new Error("「ぐははははは,エラーにしてやる！」") // Error Classを使用する場合
+} catch (error) {
+  console.log(error)
+}
 
-// try {
-//   const myname = "nob"
-//   const text3 = "あなたの名前は" + myname + "ですね。"
-//   // 強制でエラーを吐き出す
-//   throw new Error("「ぐははははは,エラーにしてやる！」") //エラーを作成
-// } catch (error) {
-//   console.log(error)
-//   // console.error(error)
-// }
-
-// console.log("よくできました！")
+console.log("よくできました！")
