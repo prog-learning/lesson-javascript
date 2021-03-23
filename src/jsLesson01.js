@@ -1,5 +1,5 @@
 /**
- * #01 console.log() （コンソールに表示する）
+ * 01 console.log() （コンソールに表示する）
  */
 console.log("こんそーるに表示"); //文字列
 console.log(123); // 数値
