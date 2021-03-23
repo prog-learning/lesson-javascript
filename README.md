@@ -1,3 +1,5 @@
 # lesson-javascript
 
-ブランチごとに
+## Getting Started
+
+`yarn lesson`
