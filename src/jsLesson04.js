@@ -1,19 +1,26 @@
 /**
- * #04 オブジェクト（連想配列）
+ * ==============================
+ * 04. オブジェクト
+ * ==============================
  */
 
-// 連想配列（オブジェクト）を定義
-const user = { name: "のぶ", age: 37, height: 170 };
-// 名前付きの配列
-// { key1: property1, key2: property2,...}
+/* オブジェクトを定義 */
+// { key1: property1, key2: property2, ... }
+const user = { name: "ソーシャルディスタンス", level: 999, hobby: ['programming', 'football'] };
+// 名前の付いたの配列のようなもの 順番という概念はない
 
-// 特定の値を呼び出す
+// 特定の値を呼び出す（ドット記法）
 console.log(user.name);
-// 変数を使った呼び出し
-const key = "age";
-console.log(user[key]);
 
-// オブジェクトを変更
+// 変数を使った呼び出し（ブランケット記法）
+const key = "level";
+console.log(user[key]);
+console.log(user['level']); // 直接文字列でも可
+
+// 'programming'を呼び出すには？
+
+
+// オブジェクトを書き換え
 user.name = "のぶこ";
 
 // オブジェクトを追加
@@ -25,32 +32,29 @@ console.log(user);
 const users = [
   {
     id: 123,
-    user_name: "nob",
-    email: "aaa@jp",
+    user_name: "あられちゃん",
+    email: "aaa@aaa.jp",
     country: "US",
+    favorite_food: ["apple", "cherry"],
+    state: { age: 123, address: "西日暮里ロサンゼルス" },
+  },
+  {
+    id: 124,
+    user_name: "ひょうくん",
+    email: "hhh@hhh.co.jp",
+    country: "JP",
     favorite_food: ["apple", "banana", "cherry"],
-    followers: ["apple", "banana", "cherry"]
+    state: { age: 3, address: "" },
   },
   {
-    id: 1224,
-    user_name: "nobbbbbbbbb",
-    email: "aaa@jp",
-    country: "US",
-    favorite_food: ["apple", "banana", "cherry"]
+    id: 124,
+    user_name: "ゆきさん",
+    email: "yyy@yyy.com",
+    country: "EU",
+    favorite_food: ["cherry"],
+    state: {},
   },
-  {
-    id: 1223,
-    user_name: "nob",
-    email: "aaa@jp",
-    country: "US",
-    favorite_food: ["apple", "banana", "cherry"]
-  },
-  {
-    id: 1213,
-    user_name: "nob",
-    email: "aaa@jp",
-    country: "US",
-    favorite_food: ["apple", "banana", "cherry"]
-  }
 ];
 console.log(users[1].favorite_food[2]);
+console.log(users[1].state.age);
+

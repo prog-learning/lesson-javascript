@@ -1,11 +1,13 @@
 /**
- * #03 配列
+ * ==============================
+ * 03. 配列
+ * ==============================
  */
 
-// 配列を定義
-const hairetu = ["文字列1", "文字列2", "文字列3"];
+/* 配列の定義 */
+const hairetu = ["文字列1", "文字列2", 121212];
 
-const array = [1, 2, 3];
+const array = [1, [2, 3], [4, 5, 6], [7, 8, 9, 10]]; // 配列の要素に配列を入れることも可能
 
 const colors = ["red", "green", "blue", "yellow", "black", "white", "gray"];
 
@@ -17,31 +19,20 @@ const users = [
   "ジョニー",
   "ケビン",
   "スチュアート",
-  "ジョニー"
+  "ジョニー", // 最後の要素にも`,`を付けると良い
 ];
 
 // 配列を呼び出す
-console.log(colors[0]);
-console.log(users[4]);
+console.log(colors[0]); // 1番目
+console.log(array[2][1]); // 3番目の配列の2番目
 
-// 配列の変更や追加（配列の中身はconstでも変更可能）
+const num = 4;
+console.log(users[num]); // 変数を使用することも
+
+// 配列の変更や追加
 const fruits = ["apple", "banana", "cherry"];
 fruits[2] = "dragonfruits"; // 変更
 console.log(fruits);
 fruits[3] = "orange"; // 追加
 console.log(fruits);
-
-// 応用
-const foods = [
-  "rice",
-  ["トマト", "きゅうり", "なす", "レタス"],
-  ["orange", "strawberry", "grape", "mango"]
-];
-
-// きゅうりを呼び出す.
-
-// 03_？（06後に開放）
-// for (let i = 0; i < colors.length; i++) {
-//     console.log(`こんにちは.${users[i]}`)
-//     console.log(`あなたの色は${colors[i]}`)
-// }
+// 再代入ではないのでconstでも変更可能

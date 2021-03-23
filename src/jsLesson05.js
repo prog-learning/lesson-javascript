@@ -80,6 +80,8 @@ switch (signal) {
     break;
 }
 
+/* undefind と null */
+
 
 /* 実践編 */
 // 条件分岐による定義や代入
