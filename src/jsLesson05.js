@@ -79,3 +79,16 @@ switch (signal) {
     console.log("故障かな？");
     break;
 }
+
+
+/* 実践編 */
+// 条件分岐による定義や代入
+
+const info = { id: '123', age: 88 };
+const userName = info.userName ? info.userName : 'no_name';
+// const userName = info.userName || 'no_name';
+console.log(userName);
+
+const signalColor = 'red';
+const action = { red: 'Stop', yellow: 'Be careful', blue: 'Go!!' }[signalColor];
+console.log(action);
