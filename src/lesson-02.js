@@ -10,7 +10,7 @@ const sistarName = "じゃい子";
 // ※エラーが起こるとそのさきのコードは実行されない
 
 /* 定義した変数を文字列に組み込む */
-console.log("私の名前は" + sistarName + "です。");
+console.log("私の名前は" + sistarName + "です。"); // 私の名前はじゃい子です。
 
 // テンプレートリテラルで変数を文字列に組み込む
 console.log(`私の名前は${sistarName}ではありません。`);
@@ -24,13 +24,23 @@ console.log(`やつあたり！\n上司に${level ** 2}のダメージ！`);
 
 /* let（再代入可） */
 let butagorira = "じゃイヤン";
-console.log(butagorira);
+console.log(butagorira); // じゃイヤン
 
 butagorira = "死んじゃイヤン"; // 再代入（可能）
-console.log(butagorira);
+console.log(butagorira); // 死んじゃイヤン
 
 butagorira = 123; // 文字列じゃなくてもOK
 console.log(butagorira + 321); // でも,この行だけ見たら,計算をしていることはわからない（可読性が低いコード）
+
+// 数字を変化（計算）させる書き方
+let i = 1;
+i = i + 5; // 5を足す（ i に i+5 を再代入）
+console.log(i); // 6
+i += 5; // 省略形
+console.log(i); // 11
+// 1を足す場合の省略形
+i++;
+console.log(i); //12
 
 /* 昔の変数定義の書き方（一応知っておこう） */
 var old = "バー";

@@ -1,9 +1,11 @@
 /**
- * #12 importとexport
+ * ==============================
+ * 12. import と export
+ * ==============================
  */
 
-import { name } from "./jsLesson12_export";
-import User from "./jsLesson12_export";
+import { name } from "./jsLesson12export";
+import User from "./jsLesson12export";
 
 console.log(name);
 console.log(User);
