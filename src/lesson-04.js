@@ -4,6 +4,7 @@
  * ==============================
  */
 
+
 /* オブジェクトを定義 */
 // { key1: property1, key2: property2, ... }
 const user = { name: "ソーシャルディスタンス男", level: 999, hobby: ['programming', 'football'] };

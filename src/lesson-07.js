@@ -118,6 +118,12 @@ const arrow2 = apple => {
   );
 };
 
+// 戻り値がない場合
+const arrow6 = (apple) => {
+  // 処理
+  console.log(`${apple}を射抜いてみせましょう`);
+};
+
 // 戻り値が一つの場合
 const arrow3 = (apple) => {
   // 処理
@@ -132,3 +138,16 @@ const arrow4 = (apple) => (
 
 // すべての省略を組み合わせてみる
 const arrow5 = apple => `=${apple}=>`;
+
+['aaa', 'bbb'].map(
+
+  () => {
+
+    return (
+      <li>
+
+      </li>
+    );
+  }
+
+);
