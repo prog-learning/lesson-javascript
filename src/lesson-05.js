@@ -18,28 +18,28 @@ if ('条件1') {
 const kaminoke = 5000;
 
 if (kaminoke > 100) {
-  console.log("fusafusa");
+  console.log('fusafusa');
 } else if (kaminoke > 30) {
-  console.log("普通です");
+  console.log('普通です');
 } else {
-  console.log("👴🏼");
+  console.log('👴🏼');
 }
 
 /* else if で次の条件を指定 */
 const score = Math.floor(Math.random() * 100) + 1; // 1〜100の整数がランダムで決まる
 
 if (score) {
-  console.log("満点！天才！完璧！");
+  console.log('満点！天才！完璧！');
 } else if (score >= 80) {
-  console.log("優秀ですね.");
+  console.log('優秀ですね.');
 } else if (score >= 50) {
-  console.log("普通だよ.");
+  console.log('普通だよ.');
 } else if (score > 30) {
-  console.log("次は頑張りましょう！");
+  console.log('次は頑張りましょう！');
 } else if (score > 5) {
-  console.log("そんな日もある");
+  console.log('そんな日もある');
 } else {
-  console.log("お前はクズだ");
+  console.log('お前はクズだ');
 }
 
 // 真偽値と条件式
@@ -66,10 +66,9 @@ x > 15 && y > 15; // true
 // || ...どちらかを満たすかどうか
 x > 25 || y > 25; // true
 
-
 /* 三項演算子を使った条件分岐 */
 const random = Math.floor(Math.random() * 10) + 1; // 1〜10の整数がランダムで決まる
-random > 5 ? console.log("5より大きいです") : console.log("5以下です");
+random > 5 ? console.log('5より大きいです') : console.log('5以下です');
 
 // 実例
 const info = { id: '123', age: 88 };
@@ -80,25 +79,24 @@ const idCheck = info.id && 'IDは取得可能'; // あった場合の代入
 const userData = info.data || 'no_data'; // なかった場合の代入
 console.log(idCheck, userData);
 
-
 /* switch文 */
 const signals = ['red', 'yellow', 'blue'];
 const dice = Math.floor(Math.random() * 3); // 0〜2の整数がランダムで決まる
 const signal = signals[dice];
 
 switch (signal) {
-  case "blue":
-    console.log("渡ってよし");
+  case 'blue':
+    console.log('渡ってよし');
     break;
-  case "yellow":
-    console.log("気をつけて渡ってよし");
+  case 'yellow':
+    console.log('気をつけて渡ってよし');
     break;
-  case "red":
-    console.log("渡るな危険");
+  case 'red':
+    console.log('渡るな危険');
     break;
   default:
     // その他
-    console.log("故障かな？");
+    console.log('故障かな？');
     break;
 }
 
@@ -127,6 +125,7 @@ if ('') {
 
 if (['hai', 'retu']) console.log('配列はtrue');
 if ([]) console.log('空の配列もtrue');
+
 /* 補足
   - elseを使わないと整っているように見える
   - 1行でif文を書くことも可能（ { }の省略 ）

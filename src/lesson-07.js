@@ -10,21 +10,21 @@
 // 1. 関数宣言
 function kansuu1() {
   //  処理（関数は処理を束ねたり,使い回すことに使う）
-  console.log("関数`kansuu1`が実行されました！");
+  console.log('関数`kansuu1`が実行されました！');
   // alert("関数`kansuu1`が実行されました！"); // アラートを表示する関数
 }
 
 // 2.関数の定義
 const kansuu2 = function () {
   //  処理
-  console.log("関数`kansuu2`が実行されました！");
+  console.log('関数`kansuu2`が実行されました！');
   // alert("関数`kansuu2`が実行されました！"); // アラートを表示する関数
 };
 
 // 3.関数の定義（アロー関数）...※これが,新しい定義方法なので,今後はこちらを統一して使います
 const kansuu3 = () => {
   //  処理
-  console.log("関数`kansuu3`が実行されました！");
+  console.log('関数`kansuu3`が実行されました！');
   // alert("関数`kansuu3`が実行されました！"); // アラートを表示する関数
 };
 
@@ -36,26 +36,24 @@ kansuu2();
 kansuu3();
 // 作っただけでは実行されないので注意
 
-
 // 例
 const timeZone = ['朝', '昼', '夜'];
 
 const now = timeZone[Math.floor(Math.random() * 3)];
 
 const greeting = () => {
-  console.log("これから,時間帯に応じた挨拶をします！");
-  if (now === "朝") {
+  console.log('これから,時間帯に応じた挨拶をします！');
+  if (now === '朝') {
     console.log(`今は,${now}です。\ngood morning.`);
-  } else if (now === "昼") {
+  } else if (now === '昼') {
     console.log(`今は,${now}です。\nこんにちは！`);
   } else {
     console.log(`今は,${now}です。\nおやすみzzz`);
   }
-  console.log("先生：「よく挨拶できましたね！」");
+  console.log('先生：「よく挨拶できましたね！」');
 };
 
 greeting();
-
 
 /* 引数 */
 
@@ -66,13 +64,13 @@ const add = (x, y) => {
 add(12, 24); // 36
 
 const selfIntroduction = (name, birth) => {
-  const birthday = birth + "月";
+  const birthday = birth + '月';
   console.log(`こんにちは`);
   console.log(`私の名前は${name}です。`);
   console.log(`誕生月は${birthday}です。`);
 };
 
-selfIntroduction("のぶ", 8);
+selfIntroduction('のぶ', 8);
 
 /* 戻り値（返り値） */
 const add1 = (a, b) => {
@@ -96,7 +94,6 @@ console.log(add1(3, 7)); // 10
 const result = add1(5, 8); // 関数が実行され,結果は変数に入る
 console.log(result); // 13
 
-
 /* 関数の省略形 */
 // 原形
 const arrow1 = (apple) => {
@@ -109,7 +106,7 @@ const arrow1 = (apple) => {
 };
 
 // 引数が一つの場合
-const arrow2 = apple => {
+const arrow2 = (apple) => {
   // 処理
   console.log(`${apple}を射抜いてみせましょう`);
   return (
@@ -132,22 +129,11 @@ const arrow3 = (apple) => {
 };
 
 // 処理がない場合
-const arrow4 = (apple) => (
-  `=${apple}=>`
-);
+const arrow4 = (apple) => `=${apple}=>`;
 
 // すべての省略を組み合わせてみる
-const arrow5 = apple => `=${apple}=>`;
+const arrow5 = (apple) => `=${apple}=>`;
 
-['aaa', 'bbb'].map(
-
-  () => {
-
-    return (
-      <li>
-
-      </li>
-    );
-  }
-
-);
+['aaa', 'bbb'].map(() => {
+  return <li></li>;
+});
