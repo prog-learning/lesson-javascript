@@ -95,18 +95,20 @@ const result = add1(5, 8); // 関数が実行され,結果は変数に入る
 console.log(result); // 13
 
 /* 関数の省略形 */
+
 // 原形
 const arrow1 = (apple) => {
-  // 処理
+  // 処理を書くところ
   console.log(`${apple}を射抜いてみせましょう`);
+
   return (
-    // 戻り値
+    // 戻り値を書くところ
     `=${apple}=>`
   );
 };
 
 // 引数が一つの場合
-const arrow2 = (apple) => {
+const arrow2 = apple => {
   // 処理
   console.log(`${apple}を射抜いてみせましょう`);
   return (
@@ -129,11 +131,9 @@ const arrow3 = (apple) => {
 };
 
 // 処理がない場合
-const arrow4 = (apple) => `=${apple}=>`;
+const arrow4 = (apple) => (
+  `=${apple}=>`
+);
 
 // すべての省略を組み合わせてみる
-const arrow5 = (apple) => `=${apple}=>`;
-
-['aaa', 'bbb'].map(() => {
-  return <li></li>;
-});
+const arrow5 = apple => `=${apple}=>`;
