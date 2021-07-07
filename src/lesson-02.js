@@ -10,6 +10,7 @@ const sistarName = 'じゃい子';
 // sistarName = "じゃい子じゃない子"; // 再代入不可
 // ※エラーが起こるとそのさきのコードは実行されない
 
+
 /* 定義した変数を文字列に組み込む */
 
 // 結合子を使う
@@ -23,6 +24,7 @@ const level = 12;
 console.log(`経験を積んで${level + 5}レベルになった！`);
 console.log(`やつあたり！\n上司に${level ** 2}のダメージ！`);
 // ${ } の中はJavaScriptが簡単に書けるイメージ
+
 
 /* let（再代入可） */
 let butagorira = 'じゃイヤン';
@@ -56,6 +58,7 @@ console.log(i); // 12
 // 1を引く場合
 i--;
 console.log(i); // 11
+
 
 /* 昔の変数定義の書き方（一応知っておこう） */
 var old = 'バー';

@@ -22,6 +22,7 @@ const users = [
   "グェンドリン・クリスティー", // 最後の要素にも , を付けると追加や並び替えがしやすくなる
 ];
 
+
 /* 配列を呼び出す */
 console.log(colors[0]); // 1番目
 console.log(array[2][1]); // 3番目の配列の2番目
@@ -37,21 +38,22 @@ fruits[3] = "orange"; // 追加
 console.log(fruits);
 // 再代入ではないのでconstでも変更可能
 
-/* その他の配列の操作（メソッドを使用） */
-/* これ以降は,関数やメソッドを学習したあとに学ぶと良い */
+
+/* メソッドを使用した配列の操作 */
+/* これ以降は,関数やメソッドを学習したあとに学ぶと良いかも */
 
 const animal = ['dog', 'cat', 'pig'];
 console.log(animal);
 
-// 末尾に追加
+// 末尾に追加 .push()
 animal.push('rabbit');
 console.log(animal);
 
-// 末尾を削除
+// 末尾を削除 .pop()
 animal.pop();
 console.log(animal);
 
-// 配列を指定した文字を挟んだ文字列に
+// 配列を指定した文字を挟んだ文字列に join()
 const str = animal.join('と');
 console.log(str);
 
