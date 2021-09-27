@@ -7,7 +7,7 @@
 /* 書き方 */
 (function () {
   console.log('即実行されます1');
-}());
+}(/* 引数はここ */));
 
 // これでもOK
 (function () {
@@ -17,11 +17,10 @@
 // アロー関数で書く場合
 (() => {
   console.log('アロー関数でも即時');
-})();
+})(/* 引数はここ */);
 
 // 主に一箇所でしか使わない処理を書くときに使われる
-const immediate = (function (a, b) {
+const immediate = ((a, b) => {
   return a + b;
-}(2, 5));
+})(2, 5);
 console.log(immediate);
-
