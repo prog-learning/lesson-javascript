@@ -1,14 +1,17 @@
-const myName = "nob";
-const user = "直江兼続";
+/* Exportの書き方 */
 
-// Named export ...名前を指定して出力
-export { myName };
-export const foods = ['yakiniku', 'sukiyaki', 'shabushabu'];
-// 関数を出力することも可能
-export const sayHello = () => {
-  console.log('hello');
+// 単体で
+// exports.name = '直江さん';
+// exports.age = 20;
+
+// まとめて
+module.exports = {
+  name: '直江さん',
+  age: 20,
+  introduce: () => { // 関数もOK
+    console.log('私は兼続です。');
+  }
 };
 
-// defaut export ...このファイルが読み込まれたときにデフォルトで出力するものを指定
-// ※ファイルに一つのみ定義可能
-export default user;
+// 参考
+// https://www.sejuku.net/blog/80173

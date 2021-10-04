@@ -1,22 +1,19 @@
 /**
  * ==============================
- * 12. import と export
+ * 12. export と module
  * ==============================
  */
+
 /* Export */
 // `lesson-12export.js` ファイルを参照
 
 /* Import */
-// Named Import
-import { myName, } from "./lesson-12export";
-console.log(myName);
+const user = require('./lesson-12export');
+console.log(user);
 
-// まとめてインポート
-import { foods, sayHello } from "./lesson-12export";
-console.log(foods);
-sayHello();
+// 分割代入で
+const { name } = require('./lesson-12export');
+console.log(name);
 
-// default Import
-import defaultName from "./lesson-12export";
-
-console.log(defaultName);
+const { introduce } = require('./lesson-12export');
+introduce();
