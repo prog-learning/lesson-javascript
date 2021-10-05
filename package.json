@@ -1,0 +1,11 @@
+{
+  "name": "lesson-javascript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/prog-learning/lesson-javascript.git",
+  "author": "nbr41to <nbr.41to@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./src/init/index.js"
+  }
+}

@@ -1,71 +1,56 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lesson JavaScript</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Lesson JavaScript</title>
-</head>
+  <body>
+    <h1>Lesson JavaScript</h1>
+    <p>JavaScriptを基礎から応用まで浅く学べるLesson</p>
+    <h2>Lessons</h2>
+    <ol>
+      <li>Console / 文字列 / 演算子</li>
+      <li>変数を定義 const / let</li>
+      <li>配列（Array）</li>
+      <li>オブジェクト（連想配列）</li>
+      <li>条件分岐 if 文 / switch 文</li>
+      <li>繰り返し処理 for 文 / while 文</li>
+      <li>関数</li>
+      <li>alert / confirm / prompt</li>
+      <li>メソッド</li>
+      <li>DOM 操作</li>
+      <li>スプレッド構文 / 分割代入</li>
+      <li>import / export</li>
+      <li>非同期処理</li>
+      <li>try catch 文</li>
+      <li>即時関数</li>
+      <li>Class</li>
+    </ol>
 
-<body>
-  <h1>Lesson JavaScript</h1>
-  <p>JavaScriptを基礎から応用まで浅く学べるLesson</p>
-  <h2>使い方</h2>
-  <p>学びたいJavaScriptのファイルを, index.htmlのscriptからコメントアウトの解除をする</p>
-  <h2>Lessons</h2>
-  <ol>
-    <li>Console / 文字列 / 演算子</li>
-    <li>変数を定義 const / let</li>
-    <li>配列（Array）</li>
-    <li>オブジェクト（連想配列）</li>
-    <li>条件分岐 if 文 / switch 文</li>
-    <li>繰り返し処理 for 文 / while 文</li>
-    <li>関数</li>
-    <li>alert / confirm / prompt</li>
-    <li>メソッド</li>
-    <li>DOM 操作</li>
-    <li>スプレッド構文 / 分割代入</li>
-    <li>import / export</li>
-    <li>非同期処理</li>
-    <li>try catch 文</li>
-    <li>即時関数</li>
-    <li>Class</li>
-  </ol>
+    <div id="file_list"></div>
+    <button onclick="runScript()">run</button>
+    <div id="run_script"></div>
+    <script src="./src/main.js"></script>
+    <style>
+      .selected {
+        background-color: tomato;
+      }
+    </style>
 
-  <hr>
-  <p>以下Lesson10で使用</p>
-  <h1 id="dekao">鯛取る でか夫(id="dekao")</h1>
-  <h1 class="dekako">鯛取る でか子(class="dekako")</h1>
-  <p class="dekako">俺も でか子(class="dekako")</p>
-  <h6>h6だよ</h6>
-  <div id="come-on"></div>
+    <hr />
+    <p>以下Lesson10で使用</p>
+    <h1 id="dekao">鯛取る でか夫(id="dekao")</h1>
+    <h1 class="dekako">鯛取る でか子(class="dekako")</h1>
+    <p class="dekako">俺も でか子(class="dekako")</p>
+    <h6>h6だよ</h6>
+    <div id="come-on"></div>
 
-  <ul class="list">
-    <li>みかん</li>
-    <li>ばなな</li>
-  </ul>
-  <button onclick="addPeach()">addPeach</button>
-  <button onclick="changeRed()">changeRed</button>
-
-  <!-- ★★★ここから下のscriptタグはコメントアウトをオフにして使ってね★★★ -->
-  <!-- <script src="main.js"></script> -->
-  <!-- <script src="src/lesson-01.js"></script> -->
-  <!-- <script src="src/lesson-02.js"></script> -->
-  <!-- <script src="src/lesson-03.js"></script> -->
-  <!-- <script src="src/lesson-04.js"></script> -->
-  <!-- <script src="src/lesson-05.js"></script> -->
-  <!-- <script src="src/lesson-06.js"></script> -->
-  <!-- <script src="src/lesson-07.js"></script> -->
-  <!-- <script src="src/lesson-08.js"></script> -->
-  <!-- <script src="src/lesson-09.js"></script> -->
-  <script src="src/lesson-10.js"></script>
-  <!-- <script src="src/lesson-11.js"></script> -->
-  <!-- <script src="src/lesson-12.js"></script> -->
-  <!-- <script src="src/lesson-13-1.js"></script> -->
-  <!-- <script src="src/lesson-13-2.js"></script> -->
-  <!-- <script src="src/lesson-13-3.js"></script> -->
-  <!-- <script src="src/lesson-14.js"></script> -->
-  <!-- <script src="src/lesson-15.js"></script> -->
-  <!-- <script src="src/lesson-16.js"></script> -->
-</body>
-
+    <ul class="list">
+      <li>みかん</li>
+      <li>ばなな</li>
+    </ul>
+    <button onclick="addPeach()">addPeach</button>
+    <button onclick="changeRed()">changeRed</button>
+  </body>
 </html>
