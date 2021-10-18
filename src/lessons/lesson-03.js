@@ -45,6 +45,9 @@ console.log(fruits);
 const animal = ['dog', 'cat', 'pig'];
 console.log(animal);
 
+// 要素の数を取得する .length
+console.log(animal.length); // 3
+
 // 末尾に追加 .push()
 animal.push('rabbit');
 console.log(animal);

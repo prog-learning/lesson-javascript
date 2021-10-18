@@ -27,6 +27,10 @@ console.log(user);
 user.distance = '8m';
 console.log(user);
 
+// オブジェクトを削除
+delete user.distance;
+console.log(user);
+
 
 /* ユーザー情報をオブジェクトの配列で管理する実用例 */
 const users = [
