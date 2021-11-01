@@ -28,7 +28,7 @@ if (kaminoke > 100) {
 /* else if で次の条件を指定 */
 const score = Math.floor(Math.random() * 100) + 1; // 1〜100の整数がランダムで決まる
 
-if (score) {
+if (score === 100) {
   console.log('満点！天才！完璧！');
 } else if (score >= 80) {
   console.log('優秀ですね.');
@@ -100,9 +100,9 @@ switch (signal) {
     break;
 }
 
-/* undefind と null */
+/* undefined と null */
 let empty;
-console.log(empty); // なにも代入してないのでundefindという値になる
+console.log(empty); // なにも代入してないのでundefinedという値になる
 
 empty = null;
 console.log(empty); // なにもないことを強調したい場合などはnullを設定する
