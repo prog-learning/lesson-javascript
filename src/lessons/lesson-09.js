@@ -45,11 +45,11 @@ const hairetu = ['サーモン', 'イクラ', 'ハマチ'];
 
 // 後ろに追加
 hairetu.push('うに');
-console.log(hairetu);
+console.log(hairetu); // ['サーモン', 'イクラ', 'ハマチ', 'うに']
 
 // 指定した文字列をはさんで結合して文字列に
 const sushi_string = hairetu.join("☆"); // ☆で結合
-console.log(sushi_string);
+console.log(sushi_string); // サーモン☆イクラ☆ハマチ☆うに
 
 // 切り取る
 const catch_sushi1 = hairetu.slice(1, 3); // (1+1)番目から(3+1)番目の前までを

@@ -90,6 +90,10 @@ add1(3, 7); // 実行しても結果は見れない
 // 受け取った戻り値をConsoleに出力する必要がある
 console.log(add1(3, 7)); // 10
 
+// もしくは変数に結果を代入してから出力する
+const answer = add1(3, 7);
+console.log(answer);
+
 // 変数で受け取ることもできる
 const result = add1(5, 8); // 関数が実行され,結果は変数に入る
 console.log(result); // 13
